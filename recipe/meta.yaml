@@ -59,6 +59,7 @@ test:
     - fairseq-validate --help
   requires:
     - pip
+    - future
 
 about:
   home: https://github.com/pytorch/fairseq
