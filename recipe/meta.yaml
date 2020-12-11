@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fairseq-{{ version }}.tar.gz
   sha256: 05b9e6bea4fc974b33e0ee5c154ec4069c6996be30c53d3ea8dd6d13113170f2
 
 build:
@@ -24,31 +24,32 @@ build:
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
   host:
     - python
     - pip
-    - pytorch
+    - numpy
     - cython
-    - setuptools
-    - pycparser
+    - setuptools >=18.0
 
   run:
     - python
     - cffi
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - regex
-    - sacrebleu
-    - pycparser
+    - sacrebleu >=1.4.12
     - cython
     - pytorch
     - tqdm
+    - dataclasses
+    - hydra-core
 
 test:
   imports:
     - fairseq
     - fairseq.benchmark
   commands:
+    - pip check
     - fairseq-eval-lm --help
     - fairseq-generate --help
     - fairseq-interactive --help
@@ -56,6 +57,8 @@ test:
     - fairseq-score --help
     - fairseq-train --help
     - fairseq-validate --help
+  requires:
+    - pip
 
 about:
   home: https://pypi.org/project/fairseq/
