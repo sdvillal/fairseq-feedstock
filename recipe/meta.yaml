@@ -60,6 +60,7 @@ test:
   requires:
     - pip
     - future
+    - dataclasses
 
 about:
   home: https://github.com/pytorch/fairseq
