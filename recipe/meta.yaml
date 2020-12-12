@@ -35,8 +35,9 @@ requirements:
   run:
     - python
     - cffi
-    - numpy <1.20.0
-    - {{ pin_compatible('numpy') }}
+    - {{ pin_compatible('numpy') }}  # [py36]
+    - {{ pin_compatible('numpy') }}  # [py37]
+    - {{ pin_compatible('numpy') }}  # [py38]
     - regex
     - sacrebleu >=1.4.12
     - cython
