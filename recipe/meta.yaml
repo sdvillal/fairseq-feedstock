@@ -24,22 +24,21 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
     - python
     - pip
-    - numpy <1.20.0  # [py36]
-    - numpy  # [py37]
-    - numpy  # [py38]
+    - numpy
+    - numpy >=1.18.5  # [py38]
     - cython
     - setuptools >=18.0
 
   run:
     - python
     - cffi
-    - numpy <1.20.0  # [py36]
-    - numpy  # [py37]
-    - numpy  # [py38]
+    - {{ pin_compatible('numpy') }}
+    - numpy >=1.18.5  # [py38]
     - regex
     - sacrebleu >=1.4.12
     - cython
