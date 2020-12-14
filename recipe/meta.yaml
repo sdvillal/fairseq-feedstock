@@ -11,6 +11,7 @@ source:
   sha256: 5167b8734712bb74d779dc3eb494898336ad09172478db7b238a784f49915530
 
 build:
+  skip: True  # [py38]
   number: 0
   entry_points:
     - fairseq-eval-lm = fairseq_cli.eval_lm:cli_main
@@ -30,22 +31,20 @@ requirements:
     - python
     - pip
     - numpy
-    - numpy >=1.18.5  # [py38]
-    - cython >=0.29.13
-    - setuptools >=49.6.0
+    - cython
+    - setuptools
 
   run:
     - python
-    - cffi >=1.14.0
+    - cffi
     - {{ pin_compatible('numpy') }}
-    - numpy >=1.18.5  # [py38]
     - regex
-    - sacrebleu >=1.4.12
-    - cython >=0.29.13
-    - pytorch >=1.4.0
-    - tqdm >=4.50.2
-    - dataclasses >=0.7
-    - hydra-core >=1.0.4
+    - sacrebleu
+    - cython
+    - pytorch
+    - tqdm
+    - dataclasses
+    - hydra-core
 
 test:
   imports:
