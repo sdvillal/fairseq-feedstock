@@ -32,11 +32,11 @@ requirements:
     - numpy
     - numpy >=1.18.5  # [py38]
     - cython >=0.29.13
-    - setuptools
+    - setuptools >=49.6.0
 
   run:
     - python
-    - cffi
+    - cffi >=1.14.0
     - {{ pin_compatible('numpy') }}
     - numpy >=1.18.5  # [py38]
     - regex
