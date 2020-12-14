@@ -31,8 +31,8 @@ requirements:
     - pip
     - numpy
     - numpy >=1.18.5  # [py38]
-    - cython
-    - setuptools >=18.0
+    - cython >=0.29.13
+    - setuptools
 
   run:
     - python
@@ -41,11 +41,11 @@ requirements:
     - numpy >=1.18.5  # [py38]
     - regex
     - sacrebleu >=1.4.12
-    - cython
-    - pytorch
-    - tqdm
-    - dataclasses
-    - hydra-core
+    - cython >=0.29.13
+    - pytorch >= 1.4.0
+    - tqdm >=4.50.2
+    - dataclasses >=0.7
+    - hydra-core >=1.0.4
 
 test:
   imports:
