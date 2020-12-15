@@ -1,7 +1,7 @@
 About fairseq
 =============
 
-Home: https://pypi.org/project/fairseq/
+Home: https://github.com/pytorch/fairseq
 
 Package license: MIT
 
