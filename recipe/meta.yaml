@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/pytorch/fairseq/archive/v{{ version }}.tar.gz
+  url: https://github.com/pytorch/fairseq/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 4328a7cb5fe6aea874817a863eb7f1ace91d621bc504345e6d022ce64e065da0
 
 build:
