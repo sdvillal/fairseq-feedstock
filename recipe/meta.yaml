@@ -21,6 +21,7 @@ build:
     - fairseq-train = fairseq_cli.train:cli_main
     - fairseq-validate = fairseq_cli.validate:cli_main
   script: {{ PYTHON }} -m pip install . -vv
+  skip: True  # [win]
 
 requirements:
   build:
@@ -44,8 +45,7 @@ requirements:
     - regex
     - sacrebleu
     - cython
-    - pytorch  # [unix]
-    - pytorch-cpu  # [win]
+    - pytorch
     - tqdm
     - dataclasses
     - hydra-core
