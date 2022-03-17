@@ -68,27 +68,6 @@ Current build status
                   <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/fairseq-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>win_64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/sdvillal/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/fairseq-feedstock?branchName=master&jobName=win&configuration=win_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/sdvillal/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/fairseq-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/sdvillal/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/sdvillal/feedstock-builds/_apis/build/status/fairseq-feedstock?branchName=master&jobName=win&configuration=win_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -154,8 +133,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@mxr-conda](https://github.com/mxr-conda/)
-* [@ndmaxar](https://github.com/ndmaxar/)
-* [@oblute](https://github.com/oblute/)
-* [@rluria14](https://github.com/rluria14/)
+* [@sdvillal](https://github.com/sdvillal/)
 
