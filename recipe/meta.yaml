@@ -44,7 +44,8 @@ requirements:
     - regex
     - sacrebleu
     - cython
-    - pytorch
+    - pytorch  # [unix]
+    - pytorch-cpu  # [win]
     - tqdm
     - dataclasses
     - hydra-core
