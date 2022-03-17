@@ -70,6 +70,8 @@ about:
 
 extra:
   recipe-maintainers:
+    - sdvillal
+  original-recipe-maintainers:
     - mxr-conda
     - rluria14
     - oblute
